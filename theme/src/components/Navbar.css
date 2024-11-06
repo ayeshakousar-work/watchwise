@@ -1,0 +1,62 @@
+/* src/components/Navbar.css */
+.navbar {
+  background-color: #00695C; /* Slightly darker teal to create contrast with Home background */
+  color: #FAFAFA;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar h1 {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #FDD835; /* Bright golden yellow for a warmer accent */
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #B2DFDB; /* Light blue-gray for a subtle contrast */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FDD835; /* Golden yellow on hover for emphasis */
+  transform: scale(1.1);
+}
+
+.search-bar {
+  margin-left: 20px;
+}
+
+.search-bar input {
+  padding: 6px 10px;
+  border: 1px solid #004D40; /* Dark teal border to contrast with background */
+  border-radius: 8px;
+  background-color: #F5F5F5; /* Light gray for a cleaner input field */
+  color: #004D40; /* Dark teal input text */
+}
+
+.search-bar input::placeholder {
+  color: #004D40; /* Placeholder text matching input text */
+}

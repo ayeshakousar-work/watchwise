@@ -1,0 +1,46 @@
+/* src/components/AdditionalReports.css
+.additional-reports {
+    animation: fadeIn 1.5s ease-out;
+    padding: 30px;
+  }
+  
+  .report-card {
+    margin-top: 20px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  /* GraphicalReportsPage.css */
+
+.graphical-reports-page {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.chart-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.chart-container h2 {
+  color: #004D40;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 10px;
+} 

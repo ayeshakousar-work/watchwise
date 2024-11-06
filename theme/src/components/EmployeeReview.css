@@ -1,0 +1,59 @@
+/* src/components/EmployeeReview.css */
+.employee-review {
+    padding: 40px;
+    text-align: center;
+    background-color: #F5F5F5;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .review-title {
+    color: #004D40;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .review-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rating-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .rating-label {
+    font-weight: bold;
+    color: #004D40;
+    margin-bottom: 10px;
+  }
+  
+  .review-textfield {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .submit-button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .submit-button {
+    background-color: #004D40;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #003731;
+  }
+  

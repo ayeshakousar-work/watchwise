@@ -1,0 +1,87 @@
+/* src/components/Home.css */
+.home {
+  text-align: center;
+  padding: 40px;
+  background-color: #F5F5F5;
+  animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home h2 {
+  font-size: 2em;
+  color: #004D40; /* Keeping the heading color as is for contrast */
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.button-grid {
+  animation: fadeIn 2s ease-out;
+}
+
+.function-button {
+  background-color: #3F51B5;
+  color: #B2DFDB; /* Card text color to match the navbar link color */
+  font-size: 1em;
+  padding: 15px;
+  border-radius: 12px;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeInCard 1s ease forwards;
+}
+
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.function-button:hover {
+  background-color: #004D40;
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.function-button span {
+  font-weight: bold;
+  margin-top: 8px;
+  font-size: 1.1em;
+  color: #B2DFDB; /* Span text color to match navbar link color */
+}
+
+.function-button svg {
+  font-size: 2.5em;
+  color: #B2DFDB; /* Icon color to match navbar text color */
+  transition: transform 0.3s, color 0.3s;
+}
+
+.function-button:hover svg {
+  transform: rotate(20deg);
+  color: #FDD835; /* Change icon color to golden yellow on hover for added emphasis */
+}

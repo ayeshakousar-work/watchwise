@@ -1,0 +1,120 @@
+/* src/components/CommunicationHub.css */
+.communication-hub {
+    padding: 40px;
+    text-align: center;
+    background-color: #F5F5F5;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .hub-title {
+    color: #004D40;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .email-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-field {
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .send-button {
+    background-color: #004D40;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .send-button:hover {
+    background-color: #003731;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Chat Box Styles */
+  .chat-box {
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    width: 300px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  
+  .chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #004D40;
+    color: #ffffff;
+  }
+  
+  .chat-content {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+  
+  .chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #F5F5F5;
+  }
+  
+  .chat-message {
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+    color: #004D40;
+  }
+  
+  .chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .chat-input .MuiTextField-root {
+    flex: 1;
+    margin-right: 8px;
+  }
+  
+/* Floating Chat Toggle Button */
+.floating-chat-toggle {
+    position: fixed;      /* Fix the position relative to the viewport */
+    right: 20px;          /* Distance from the right edge */
+    bottom: 20px;         /* Distance from the bottom edge */
+    background-color: #004D40;
+    color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 1001;        /* Ensure it stays on top of other elements */
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .floating-chat-toggle:hover {
+    background-color: #003731;
+  }
+  
+  

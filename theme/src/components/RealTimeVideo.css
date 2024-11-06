@@ -1,0 +1,23 @@
+/* src/components/RealTimeVideo.css */
+.real-time-video {
+    animation: fadeIn 1.5s ease-out;
+    padding: 30px;
+  }
+  
+  .real-time-video video {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

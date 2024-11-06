@@ -1,0 +1,137 @@
+/* GraphicalRepresentation.css */
+
+.graphical-representation {
+  background-color: #f0f4f7;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.graphical-representation h4 {
+  color: #004D40;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.process-button {
+  background-color: #004D40;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.process-button:hover {
+  background-color: #00695c;
+}
+
+.reports-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.chart-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.chart-container h2 {
+  color: #004D40;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.activity-report {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  min-width: 300px;
+}
+
+.activity-report h2 {
+  color: #004D40;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.activity-card {
+  background-color: #e0f2f1;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.activity-card h3 {
+  color: #004D40;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.activity-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activity-card li {
+  font-size: 0.9rem;
+  color: #333;
+  padding: 3px 0;
+}
+
+.narrow-card-container {
+  animation: fadeIn 0.5s ease;
+}
+
+.station-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.station-card:hover {
+  transform: translateY(-5px);
+}
+
+.station-card .MuiCardContent-root {
+  padding: 10px;
+}
+
+.station-card h6 {
+  color: #004D40;
+  text-align: center;
+  font-weight: bold;
+}
+
+.station-card video {
+  border-radius: 4px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
